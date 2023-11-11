@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import meg from '@/app/images/cv-bilde.jpeg';
 import { Button } from '@/components/ui/button';
-import { LinkedInLogoIcon, GitHubLogoIcon, EnvelopeClosedIcon, MoonIcon } from '@radix-ui/react-icons';
+import { LinkedInLogoIcon, GitHubLogoIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 import Header from '@/components/header';
 
