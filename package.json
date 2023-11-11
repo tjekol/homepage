@@ -6,7 +6,8 @@
     "dev": "cd my-app && next dev",
     "build": "cd my-app && next build",
     "start": "cd my-app && next start",
-    "lint": "cd my-app && next lint"
+    "lint": "cd my-app && next lint",
+    "prettier": "cd my-app && pnpm exec prettier . --write"
   },
   "dependencies": {
     "next": "14.0.2",
