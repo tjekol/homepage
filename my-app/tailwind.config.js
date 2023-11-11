@@ -23,12 +23,18 @@ module.exports = {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: '#BEB4B4',
+					// DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: '#6A6060',
+					// DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))',
+				},
+				cream: {
+					DEFAULT: '#DBD2D2',
+					foreground: 'hsl(var(--cream-foreground))',
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -50,9 +56,6 @@ module.exports = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
 				},
-				lightbrown: '#BEB4B4',
-				darkbrown: '#6A6060',
-				cream: '#DBD2D2'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
