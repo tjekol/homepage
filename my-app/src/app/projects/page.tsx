@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className='w-full flex flex-col items-center space-y-8 rounded-[10px] bg-secondary/80 px-10 py-20'>
       <h1 className='text-center uppercase'>
-        ✨Prosjekter✨
+        Prosjekter🔧
       </h1>
       <div className='flex flex-col items-center space-y-4'>
         <h3 className='text-center'>Webkom💻</h3>
@@ -27,12 +27,19 @@ export default function Projects() {
       </div>
       <div className='flex flex-col items-center space-y-4'>
         <h3>Memories🎞️</h3>
-        <p className='text-center w-1/2'>
+        <p className='text-center w-2/3'>
           Dette er en nettside hvor jeg laster opp bilder via Sanity. Nettsiden bruker Next.js og tailwindCSS.
         </p>
-        <Button>
-          <Link href='https://memories-tjekol.vercel.app/'>memories-tjekol.vercel.app</Link>
-        </Button>
+        <div className='flex flex-row space-x-4'>
+          <Button>
+            <Link href='https://memories-tjekol.vercel.app/'>memories-tjekol.vercel.app</Link>
+          </Button>
+          <Button>
+            <Link href='https://memories.sanity.studio/desk'>
+              memories.sanity.studio
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className='w-full space-y-8 rounded-[10px] bg-secondary/80 px-10 py-20'>
       <h1 className='text-center uppercase'>
-        ✨Hei på deg✨
+        Hei på deg✨
       </h1>
       <div className='flex items-center justify-center space-x-8 p-6'>
         <Image
