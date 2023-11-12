@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { MoonIcon } from '@radix-ui/react-icons';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function Header() {
   const userTheme = window.localStorage.getItem('isDarkmode');
   const activePage = window.localStorage.getItem('activePage');
+  const [, setPage] = useState(activePage);
 
   function isDarkmodeCheck() {
     if (userTheme !== null) {
@@ -32,6 +33,7 @@ function Header() {
   }
 
   function activePageCheck() {
+    const activePage = window.localStorage.getItem('activePage');
     if (activePage !== null) {
       window.localStorage.setItem('activePage', activePage);
     }
@@ -40,6 +42,7 @@ function Header() {
   function activePageSet(page: string) {
     if (activePage !== null) {
       window.localStorage.setItem('activePage', page);
+      setPage(page);
     }
   }
 
