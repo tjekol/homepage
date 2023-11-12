@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='min-h-screen flex flex-col items-center justify-between bg-background p-16 space-y-10'>
+        <main className='flex min-h-screen flex-col items-center justify-between space-y-10 bg-background p-16 dark:bg-background-dark'>
           <Header />
-          <div className='grow w-5/6'>
-            {children}
+          <div className='w-5/6 grow'>{children}</div>
+          <div className='text-accent dark:text-accent-dark'>
+            Made by Thea Jenny Kolnes🦋
           </div>
-          <div className='text-text'>Made by Thea Jenny Kolnes🦋</div>
         </main>
       </body>
     </html>

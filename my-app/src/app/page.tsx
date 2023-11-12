@@ -10,10 +10,8 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className='w-full space-y-8 rounded-[10px] bg-secondary/80 px-10 py-20'>
-      <h1 className='text-center uppercase'>
-        Hei på deg✨
-      </h1>
+    <div className='w-full space-y-8 rounded-[10px] bg-secondary/80 px-10 py-20 dark:bg-secondary-dark'>
+      <h1 className='text-center uppercase'>Hei på deg✨</h1>
       <div className='flex items-center justify-center space-x-8 p-6'>
         <Image
           src={meg.src}
@@ -22,8 +20,9 @@ export default function Home() {
           alt={''}
           style={{ borderRadius: '100px' }}
         />
-        <p className='text-lg w-1/2'>
-          Mitt navn er Thea Jenny Kolnes. Jeg tar bachelor i Datateknologi💻 i Bergen på UIB.
+        <p className='w-1/2 text-lg'>
+          Mitt navn er Thea Jenny Kolnes. Jeg tar bachelor i Datateknologi💻 i
+          Bergen på UIB.
         </p>
       </div>
       <div className='flex justify-center space-x-8'>
