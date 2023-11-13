@@ -6,13 +6,12 @@ import { MoonIcon } from '@radix-ui/react-icons';
 import { useEffect, useState } from 'react';
 
 function Header() {
-  const userTheme = window.localStorage.getItem('isDarkmode');
-  const activePage = window.localStorage.getItem('activePage');
-  const [, setPage] = useState(activePage);
+  const [activePage, setActivePage] = useState('/');
+  const [themeDark, setThemeDark] = useState(false);
 
   function isDarkmodeCheck() {
-    if (userTheme !== null) {
-      if (userTheme === 'true') {
+    if (themeDark !== null) {
+      if (themeDark === true) {
         document.documentElement.classList.add('dark');
       }
     }
@@ -21,15 +20,16 @@ function Header() {
   function themeSwitch() {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
-      if (userTheme !== null) {
+      if (themeDark !== null) {
         window.localStorage.setItem('isDarkmode', 'false');
       }
     } else {
       document.documentElement.classList.add('dark');
-      if (userTheme !== null) {
+      if (themeDark !== null) {
         window.localStorage.setItem('isDarkmode', 'true');
       }
     }
+    setThemeDark(!themeDark);
   }
 
   function activePageCheck() {
@@ -42,11 +42,22 @@ function Header() {
   function activePageSet(page: string) {
     if (activePage !== null) {
       window.localStorage.setItem('activePage', page);
-      setPage(page);
+      setActivePage(page);
     }
   }
 
   useEffect(() => {
+    if (window !== undefined) {
+      const themeDark = window.localStorage.getItem('isDarkmode');
+      if (themeDark === 'true') {
+        document.documentElement.classList.add('dark');
+        setThemeDark(true);
+      }
+      const activePage = window.localStorage.getItem('activePage');
+      if (activePage !== '/' && activePage !== null) {
+        setActivePage(activePage);
+      }
+    }
     isDarkmodeCheck();
     activePageCheck();
   }, []);
