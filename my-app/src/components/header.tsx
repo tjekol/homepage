@@ -104,10 +104,11 @@ function Header() {
       >
         <Link href={'/projects'}>Prosjekter</Link>
       </Button>
+
       <Button
         size='icon'
         variant='ghost'
-        className='text-text-text-text'
+        className='text-text dark:text-text-dark'
         onClick={() => themeSwitch()}
       >
         <MoonIcon className='scale-150' />
