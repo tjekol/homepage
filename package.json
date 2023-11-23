@@ -7,6 +7,7 @@
     "build": "cd my-app && next build",
     "start": "cd my-app && next start",
     "lint": "cd my-app && next lint",
+    "i": "cd my-app && pnpm install",
     "prettier": "cd my-app && pnpm exec prettier . --write"
   },
   "dependencies": {
