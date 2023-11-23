@@ -29,7 +29,7 @@ export default function Projects() {
         </p>
         <div className='flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0'>
           <Button>
-            <Link href='https://memories-tjekol.vercel.app/'>
+            <Link href='https://memoriies.vercel.app/'>
               memories-tjekol.vercel.app
             </Link>
           </Button>
