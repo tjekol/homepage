@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='flex min-h-screen flex-col items-center justify-between space-y-8 bg-background p-16 dark:bg-background-dark'>
+        <main className='flex min-h-screen flex-col items-center justify-between space-y-8 bg-background p-8 md:p-16 dark:bg-background-dark'>
           <Header />
-          <div className='w-5/6 grow'>{children}</div>
+          <div className='w-full md:w-5/6 grow'>{children}</div>
           <div className='text-accent dark:text-accent-dark'>
             Made by Thea Jenny Kolnes🦋
           </div>
