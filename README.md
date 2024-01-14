@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-This is my new personal website in progress.
+This is my new personal website in progress https://tjekol.vercel.app
 
 <!--
 **tjekol/tjekol** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
