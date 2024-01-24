@@ -16,9 +16,6 @@ export default function Projects() {
           <Button>
             <Link href='https://echo.uib.no/'>echo.uib.no</Link>
           </Button>
-          <Button>
-            <Link href='https://beta.echo-webkom.no/'>beta.echo-webkom.no</Link>
-          </Button>
         </div>
       </div>
       <div className='flex flex-col items-center space-y-4'>
@@ -30,7 +27,7 @@ export default function Projects() {
         <div className='flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0'>
           <Button>
             <Link href='https://memoriies.vercel.app/'>
-              memories-tjekol.vercel.app
+              memoriies.vercel.app
             </Link>
           </Button>
           <Button>
@@ -38,6 +35,21 @@ export default function Projects() {
               memories.sanity.studio
             </Link>
           </Button>
+        </div>
+        <div className='flex flex-col items-center space-y-4'>
+          <h3 className='text-center'>Melbourne</h3>
+          <p className='w-4/5 md:w-1/2 '>
+            Min blogg for reisen min til Melbourne. Her legger jeg ut bilder og poster om hva 
+            jeg gjør i Melbourne. Denne nettsiden bruker også sanity og tailwindCSS.
+          </p>
+          <div className='flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0'>
+            <Button>
+              <Link href='https://melbourne.vercel.app'>melbourne.vercel.app</Link>
+            </Button>
+            <Button>
+              <Link href='https://melbourne.sanity.studio'>melbourne.sanity.studio</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
