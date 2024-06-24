@@ -22,45 +22,24 @@ module.exports = {
         ring: 'hsl(var(--ring))',
         foreground: 'hsl(var(--foreground))',
         text: {
-          DEFAULT: '#47403A',
+          DEFAULT: '#ffffff',
           foreground: 'hsl(var(--text-foreground))',
-          dark: '#c6bfb9',
+          dark: '#A6A6A6',
         },
         background: {
-          DEFAULT: '#E8E1E1',
+          DEFAULT: '#49655B',
           foreground: 'hsl(var(--background-foreground))',
-          dark: '#1d1616',
+          dark: '#000000',
         },
         primary: {
-          DEFAULT: '#B9A79D',
+          DEFAULT: '#49655B',
           foreground: 'hsl(var(--primary-foreground))',
           dark: '#625046',
         },
         secondary: {
-          DEFAULT: '#D9CFC9',
+          DEFAULT: '#ACC6BC',
           foreground: 'hsl(var(--secondary-foreground))',
           dark: '#362c26',
-        },
-        accent: {
-          DEFAULT: '#7D6659',
-          foreground: 'hsl(var(--accent-foreground))',
-          dark: '#a68f82',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
         },
       },
       borderRadius: {
