@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from './ui/button';
-import { MoonIcon, HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
+import { MoonIcon, SunIcon, HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import { NavBar } from './nav-bar';
@@ -46,21 +46,20 @@ function Header() {
   }, []);
 
   return (
-    <div className='w-5/6 space-x-2 md:flex'>
-      <div className='flex grow'>
-        <h2 className='grow self-center'>Thea Jenny E. Kolnes</h2>
-        <Button
+    <div className='w-full space-x-2 flex justify-end'>
+      <div className='flex'>
+      <Button
           size='icon'
           variant='ghostSecondary'
           className='text-text dark:text-text-dark'
           onClick={() => themeSwitch()}
         >
-          <MoonIcon className='scale-150' />
-        </Button>
+        {themeDark ? <SunIcon className='scale-150' /> : <MoonIcon className='scale-150' />}
+      </Button>
         <div className='visible md:hidden'>
           <Button
             size='icon'
-            variant='ghost'
+            variant='ghostSecondary'
             className='text-text dark:text-text-dark'
             onClick={() => setOpenMenu(!openMenu)}
           >
@@ -72,6 +71,7 @@ function Header() {
           </Button>
         </div>
       </div>
+      
       {(openMenu || !isMobile) && <NavBar />}
     </div>
   );

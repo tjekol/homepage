@@ -1,6 +1,12 @@
-### Hi there 👋
+### This is my personal website https://tjekol.vercel.app
 
-<!-- This is my personal website https://tjekol.vercel.app --!>
+---
+#### How to run locally
+
+Run the development server: `pnpm dev`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
 
 <!--
 **tjekol/tjekol** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
