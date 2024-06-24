@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className='w-full space-y-4 rounded-[10px] px-10 py-20 flex flex-col items-center'>
+    <div className='flex w-full flex-col items-center space-y-4 rounded-[10px] px-10 py-20'>
       <Image
         src={meg.src}
         width={200}
@@ -18,9 +18,10 @@ export default function Home() {
         alt={''}
         style={{ borderRadius: '100px' }}
       />
-      <h1 className='text-center'>Hi 👋🏽, I'm Thea Jenny E. Kolnes ✨</h1>
-      <p className='w-5/6 text-center dark:text-text-dark md:w-2/5 pb-4'>
-      I’m currently studying Computer Technology 💻 at University in Bergen. I take an interest in editing📹, coding👩🏽‍💻, photography📸 and art🎨.
+      <h1 className='text-center'>Hi 👋🏽, I’m Thea Jenny E. Kolnes ✨</h1>
+      <p className='w-5/6 pb-4 text-center dark:text-text-dark md:w-2/5'>
+        I’m currently studying Computer Technology 💻 at University in Bergen. I
+        take an interest in editing📹, coding👩🏽‍💻, photography📸 and art🎨.
       </p>
       <div className='flex flex-row md:space-x-2'>
         <Button
