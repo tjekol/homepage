@@ -48,6 +48,6 @@
   }
   p {
     @apply text-sm md:text-base;
-    @apply text-secondary;
+    @apply text-secondary dark:text-text-dark;
   }
 }
