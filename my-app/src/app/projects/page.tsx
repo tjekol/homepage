@@ -2,7 +2,7 @@ export default function Projects() {
   return (
     <div className='flex w-full flex-col items-center space-y-8 rounded-[10px] px-10 py-20'>
       <h1 className='text-center uppercase'>Prosjekter🔧</h1>
-      <div className='grid grid-cols-2 gap-8 md:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
         <div className='flex flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://melbourne.vercel.app' target='_'>
             <h3 className='text-center hover:underline'>Melbourne Dagbok🇦🇺</h3>
