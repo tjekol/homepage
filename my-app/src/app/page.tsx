@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className='flex w-full flex-col items-center space-y-4 rounded-[10px] px-10 py-20'>
+    <div className='flex w-full flex-col items-center space-y-4 rounded-[10px] md:px-10 py-0 md:py-20'>
       <Image
         src={meg.src}
         width={200}

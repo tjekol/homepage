@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className='flex min-h-screen flex-col items-center justify-between space-y-8 bg-primary p-8 dark:bg-background-dark md:p-10'>
           <Header />
-          <div className='w-full grow md:w-5/6'>{children}</div>
+          <div className='w-full h-5/6 grow md:w-5/6'>{children}</div>
           <div className='text-secondary dark:text-text-dark'>
             Made by Thea Jenny Kolnes🦋
           </div>

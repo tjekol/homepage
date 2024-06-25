@@ -32,11 +32,11 @@ export function NavBar() {
   }, []);
 
   return (
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex flex-row'>
       <Button
         variant='link'
         className={
-          'flex-none text-xl md:text-xl ' +
+          'flex-none text-base md:text-xl px-1 ' +
           (activePage === '/'
             ? 'text-text dark:text-text'
             : 'text-secondary dark:text-text-dark')
@@ -44,12 +44,12 @@ export function NavBar() {
         onClick={() => activePageSet('/')}
         asChild
       >
-        <Link href={'/'}>Home</Link>
+        <Link href={'/'} >Home</Link>
       </Button>
       <Button
         variant='link'
         className={
-          'flex-none text-xl md:text-xl ' +
+          'flex-none text-base md:text-xl px-1' +
           (activePage === '/projects'
             ? 'text-text dark:text-text'
             : 'text-secondary dark:text-text-dark')
