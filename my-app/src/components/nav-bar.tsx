@@ -38,7 +38,7 @@ export function NavBar() {
         className={
           'flex-none text-base md:text-xl px-1 ' +
           (activePage === '/'
-            ? 'text-text dark:text-text'
+            ? 'text-text underline dark:text-text'
             : 'text-secondary dark:text-text-dark')
         }
         onClick={() => activePageSet('/')}
@@ -49,15 +49,15 @@ export function NavBar() {
       <Button
         variant='link'
         className={
-          'flex-none text-base md:text-xl px-1' +
+          'flex-none text-base md:text-xl px-1 ' +
           (activePage === '/projects'
-            ? 'text-text dark:text-text'
+            ? 'text-text underline  dark:text-text'
             : 'text-secondary dark:text-text-dark')
         }
         onClick={() => activePageSet('/projects')}
         asChild
       >
-        <Link href={'/projects'}>Projects</Link>
+        <Link href={'/projects'} >Projects</Link>
       </Button>
     </div>
   );
