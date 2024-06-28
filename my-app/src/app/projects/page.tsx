@@ -2,8 +2,8 @@ export default function Projects() {
   return (
     <div className='flex w-full flex-col items-center space-y-8 rounded-[10px] px-10 md:py-20'>
       <h1 className='text-center uppercase'>Prosjekter🔧</h1>
-      <div className='grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-3'>
-        <div className='flex flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4 max-w-sm'>
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8'>
+        <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://melbourne.vercel.app' target='_'>
             <h3 className='text-center hover:underline'>Melbourne Dagbok🇦🇺</h3>
           </a>
@@ -17,7 +17,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className='flex flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4 max-w-sm'>
+        <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://memoriies.vercel.app/' target='_'>
             <h3 className='text-center hover:underline'>Memories🎞️</h3>
           </a>
@@ -30,7 +30,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className='flex flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4 max-w-sm'>
+        <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://echo.uib.no/' target='_'>
             <h3 className='text-center hover:underline'>echo Webkom💻</h3>
           </a>

@@ -6,14 +6,14 @@ import { useState } from 'react';
 
 enum ActivePage {
   Home,
-  Projects
+  Projects,
 }
 
 export function NavBar() {
   const [activePage, setActivePage] = useState(ActivePage.Home);
   function activePageSet(page: ActivePage) {
     setActivePage(page);
-  };
+  }
 
   function onPage(page: ActivePage) {
     return activePage === page;
@@ -24,7 +24,7 @@ export function NavBar() {
       <Button
         variant='link'
         className={
-          'flex-none text-base md:text-xl px-1 ' +
+          'flex-none px-1 text-base md:text-xl ' +
           (onPage(ActivePage.Home)
             ? 'text-text underline dark:text-text'
             : 'text-secondary dark:text-text-dark')
@@ -32,12 +32,12 @@ export function NavBar() {
         onClick={() => activePageSet(ActivePage.Home)}
         asChild
       >
-        <Link href={'/'} >Home</Link>
+        <Link href={'/'}>Home</Link>
       </Button>
       <Button
         variant='link'
         className={
-          'flex-none text-base md:text-xl px-1 ' +
+          'flex-none px-1 text-base md:text-xl ' +
           (onPage(ActivePage.Projects)
             ? 'text-text underline  dark:text-text'
             : 'text-secondary dark:text-text-dark')
@@ -45,7 +45,7 @@ export function NavBar() {
         onClick={() => activePageSet(ActivePage.Projects)}
         asChild
       >
-        <Link href={'/projects'} >Projects</Link>
+        <Link href={'/projects'}>Projects</Link>
       </Button>
     </div>
   );
