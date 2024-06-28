@@ -34,7 +34,7 @@ module.exports = {
       2,
     ],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['single'],
+    quotes: ['warn', 'single'],
     semi: ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
   },
