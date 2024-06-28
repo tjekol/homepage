@@ -7,7 +7,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-primary dark:bg-primary-dark text-foreground;
+    @apply bg-primary text-foreground dark:bg-primary-dark;
   }
   h1 {
     @apply text-lg md:text-3xl;
