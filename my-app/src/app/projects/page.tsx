@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Projects() {
   return (
     <div className='flex w-full flex-col items-center space-y-8 rounded-[10px] px-10 md:py-20'>
@@ -8,12 +9,13 @@ export default function Projects() {
             <h3 className='text-center hover:underline'>Melbourne Dagbok🇦🇺</h3>
           </a>
           <p className='text-sm'>
-            Min blogg for reisen min til Melbourne. Her legger jeg ut bilder og
-            poster om hva jeg gjør i Melbourne. Denne nettsiden bruker også{' '}
+            My travel blog from my exchange semester in Ausralia, Melbourne.
+            During my travels I uploaded posts and pictures of my life down
+            under. This website uses{' '}
             <a href='https://melbourne.sanity.studio'>
               <u>sanity</u>
             </a>{' '}
-            og tailwindCSS.
+            and tailwindCSS in React.
           </p>
         </div>
 
@@ -22,11 +24,11 @@ export default function Projects() {
             <h3 className='text-center hover:underline'>Memories🎞️</h3>
           </a>
           <p className='text-sm'>
-            Dette er en nettside hvor jeg laster opp bilder via{' '}
+            Website for uploading my pictures that I am proud of via{' '}
             <a href='https://memories.sanity.studio/desk'>
-              <u>Sanity</u>
+              <u>sanity</u>
             </a>
-            . Nettsiden bruker Next.js og tailwindCSS.
+            . This website is built in React and tailwindCSS.
           </p>
         </div>
 
@@ -35,9 +37,9 @@ export default function Projects() {
             <h3 className='text-center hover:underline'>echo Webkom💻</h3>
           </a>
           <p className='text-sm'>
-            Webkom er en undergruppe under linjeforeningen echo, som er
-            linjeforeningen til Institutt for Informatikk på UIB. Denne
-            undergruppa drifter nettsidene til echo.
+            Webkom is a sub-group of our student association under the
+            Department of Informatics at University in Bergen. Webkom runs the
+            student association's websites.`
           </p>
         </div>
       </div>
