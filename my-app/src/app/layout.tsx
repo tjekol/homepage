@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Thea Jenny E. Kolnes Website',
+  // eslint-disable-next-line quotes
   description: `Thea Jenny's personal website`,
 };
 
