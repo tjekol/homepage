@@ -21,8 +21,9 @@ export default function Home() {
       />
       <h1 className='text-center'>Hi 👋🏽, I’m Thea Jenny E. Kolnes ✨</h1>
       <p className='w-5/6 pb-4 text-center dark:text-text-dark md:w-2/5'>
-        I’m currently studying Computer Technology 💻 at University in Bergen. I
-        take an interest in editing📹, coding👩🏽‍💻, photography📸 and art🎨.
+        MSc in Software Engineering 💻 at University in Bergen/Western Norway
+        University of Applied Sciences. I take an interest in video editing📹,
+        coding👩🏽‍💻, photography📸 and art🎨.
       </p>
       <div className='flex flex-row md:space-x-2'>
         <Button

@@ -6,7 +6,7 @@ export default function Projects() {
       <div className='grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8'>
         <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://melbourne.vercel.app' target='_'>
-            <h3 className='text-center hover:underline'>Melbourne Dagbok🇦🇺</h3>
+            <h3 className='text-center underline'>Melbourne Dagbok🇦🇺</h3>
           </a>
           <p className='text-sm'>
             My travel blog from my exchange semester in Ausralia, Melbourne.
@@ -21,7 +21,7 @@ export default function Projects() {
 
         <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://memoriies.vercel.app/' target='_'>
-            <h3 className='text-center hover:underline'>Memories🎞️</h3>
+            <h3 className='text-center underline'>Memories🎞️</h3>
           </a>
           <p className='text-sm'>
             Website for uploading my pictures that I am proud of via{' '}
@@ -34,7 +34,7 @@ export default function Projects() {
 
         <div className='flex max-w-sm flex-col items-center space-y-4 rounded-[20px] border-2 border-secondary p-4'>
           <a href='https://echo.uib.no/' target='_'>
-            <h3 className='text-center hover:underline'>echo Webkom💻</h3>
+            <h3 className='text-center underline'>echo Webkom💻</h3>
           </a>
           <p className='text-sm'>
             Webkom is a sub-group of our student association under the
