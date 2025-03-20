@@ -9,9 +9,11 @@ import Link from 'next/link';
 export default function MyButton({
   title,
   link,
+  tag,
 }: {
   title: string;
   link: string;
+  tag: string;
 }) {
   return (
     <div className='flex flex-row items-center'>
@@ -26,7 +28,7 @@ export default function MyButton({
           )}
         </Link>
       </Button>
-      <p>{title}</p>
+      <p>{tag}</p>
     </div>
   );
 }
