@@ -7,7 +7,7 @@ import { ThemeProvider } from 'next-themes';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Thea Jenny E. Kolnes Website',
+  title: 'TJEK',
   // eslint-disable-next-line quotes
   description: `Thea Jenny's personal website`,
 };
