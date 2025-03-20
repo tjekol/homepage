@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import meg from '@/app/images/cv-bilde.jpeg';
 import { Button } from '@/components/ui/button';
 import {
   LinkedInLogoIcon,
@@ -7,24 +5,16 @@ import {
   EnvelopeClosedIcon,
 } from '@radix-ui/react-icons';
 import Link from 'next/link';
+import textFile from '@/assets/text.json';
 
 export default function Home() {
+  const mainText = textFile.texts.main;
+  const aboutText = textFile.texts.about;
+
   return (
     <div className='flex w-full flex-col items-center space-y-4 rounded-[10px] py-0 md:px-10 md:py-20'>
-      <Image
-        className='max-w-40 md:max-w-60'
-        src={meg.src}
-        width={200}
-        height={200}
-        alt={''}
-        style={{ borderRadius: '100px' }}
-      />
-      <h1 className='text-center'>Hi 👋🏽, I’m Thea Jenny E. Kolnes ✨</h1>
-      <p className='w-5/6 pb-4 text-center  md:w-2/5'>
-        MSc in Software Engineering 💻 at University in Bergen/Western Norway
-        University of Applied Sciences. I take an interest in video editing📹,
-        coding👩🏽‍💻, photography📸 and art🎨.
-      </p>
+      <h1 className='text-center'>{mainText}</h1>
+      <p className='w-5/6 pb-4 text-center md:w-2/5'>{aboutText}</p>
       <div className='flex flex-row md:space-x-2'>
         <Button
           variant='link'
