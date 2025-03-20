@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='dark'>
-          <main className='flex min-h-screen flex-col items-center justify-between space-y-8 p-8 md:p-10'>
+          <main className='flex h-screen w-screen flex-col items-center justify-between p-8 md:p-10'>
             <Header />
-            <div className='h-5/6 w-full grow md:w-5/6'>{children}</div>
+            {children}
             <p>Made by Thea Jenny Kolnes🦋</p>
           </main>
         </ThemeProvider>

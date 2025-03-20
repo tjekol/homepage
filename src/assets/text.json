@@ -3,7 +3,8 @@
     "main": "Hi 👋🏽, my name is Thea Jenny E. Kolnes ✨",
     "about": "I'm currently studying Computer Technology 💻 at University in Bergen and Western Norway University of Applied Sciences.",
     "description": "I take an interest in:",
-    "interests": ["editing📹", "coding👩🏽‍💻", "photography📸", "and art🎨"]
+    "interests": ["editing📹", "coding👩🏽‍💻", "photography📸", "and art🎨"],
+    "socialDesciption": "Connect with me🤝🏼"
   },
   "social": [
     {
@@ -17,7 +18,7 @@
       "tag": "@tjekol"
     },
     {
-      "title": "mail",
+      "title": "email",
       "link": "mailto:thea.jenny02@gmail.com",
       "tag": "thea.jenny02@gmail.com/"
     }
