@@ -1,7 +1,6 @@
-import { DividerVerticalIcon } from '@radix-ui/react-icons';
 import textFile from '@/assets/text.json';
 import MyButton from '@/components/button';
-import line from '@/assets/line1.png';
+import line from '@/assets/verticalLine.png';
 import Image from 'next/image';
 
 export default function Home() {
@@ -35,7 +34,12 @@ export default function Home() {
       <div className='flex flex-col p-10'>
         <p className='font-medium'>{socialDesc}</p>
         {socials.map((social, k) => (
-          <MyButton key={k} title={social.title} link={social.link} />
+          <MyButton
+            key={k}
+            title={social.title}
+            link={social.link}
+            tag={social.tag}
+          />
         ))}
       </div>
     </div>
