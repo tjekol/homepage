@@ -1,54 +1,42 @@
-import { Button } from '@/components/ui/button';
-import {
-  LinkedInLogoIcon,
-  GitHubLogoIcon,
-  EnvelopeClosedIcon,
-} from '@radix-ui/react-icons';
-import Link from 'next/link';
+import { DividerVerticalIcon } from '@radix-ui/react-icons';
 import textFile from '@/assets/text.json';
+import MyButton from '@/components/button';
+import line from '@/assets/line1.png';
+import Image from 'next/image';
 
 export default function Home() {
-  const mainText = textFile.texts.main;
-  const aboutText = textFile.texts.about;
+  const main = textFile.texts.main;
+  const about = textFile.texts.about;
+  const description = textFile.texts.description;
+  const interests = textFile.texts.interests;
+
+  const socialDesc = textFile.texts.socialDesciption;
+  const socials = textFile.social;
 
   return (
-    <div className='flex w-full flex-col items-center space-y-4 rounded-[10px] py-0 md:px-10 md:py-20'>
-      <h1 className='text-center'>{mainText}</h1>
-      <p className='w-5/6 pb-4 text-center md:w-2/5'>{aboutText}</p>
-      <div className='flex flex-row md:space-x-2'>
-        <Button
-          variant='link'
-          size='sm'
-          className='text-base text-text'
-          asChild
-        >
-          <Link
-            href={'https://www.linkedin.com/in/thea-jenny-kolnes-a79821231/'}
-            target='_blank'
-          >
-            <LinkedInLogoIcon className='mr-2 scale-150' />
-          </Link>
-        </Button>
-        <Button
-          variant='link'
-          size='sm'
-          className='text-base text-text'
-          asChild
-        >
-          <Link href={'https://github.com/tjekol'} target='_blank'>
-            <GitHubLogoIcon className='mr-2 scale-150' />
-          </Link>
-        </Button>
-        <Button
-          variant='link'
-          size='sm'
-          className='text-base text-text'
-          asChild
-        >
-          <Link href={'mailto:thea.jenny02@gmail.com'}>
-            <EnvelopeClosedIcon className='mr-2 scale-150' />
-          </Link>
-        </Button>
+    <div className='flex w-full flex-row items-center justify-center gap-2'>
+      {/* left side */}
+      <div className='flex w-1/3 flex-col gap-4'>
+        <div>
+          <h1>Hi 👋🏽,</h1>
+          <h1>my name is</h1>
+          <h1>Thea Jenny E. Kolnes ✨</h1>
+        </div>
+        <p>{about}</p>
+        <p className='font-medium'>{description}</p>
+        <div className='grid grid-cols-2'>
+          {interests.map((interest, k) => (
+            <p key={k}>{interest}</p>
+          ))}
+        </div>
+      </div>
+      <Image src={line} alt='Divider' />
+      {/* right side */}
+      <div className='flex flex-col p-10'>
+        <p className='font-medium'>{socialDesc}</p>
+        {socials.map((social, k) => (
+          <MyButton key={k} title={social.title} link={social.link} />
+        ))}
       </div>
     </div>
   );
