@@ -20,7 +20,7 @@ export default function Home() {
         style={{ borderRadius: '100px' }}
       />
       <h1 className='text-center'>Hi 👋🏽, I’m Thea Jenny E. Kolnes ✨</h1>
-      <p className='w-5/6 pb-4 text-center dark:text-text-dark md:w-2/5'>
+      <p className='w-5/6 pb-4 text-center  md:w-2/5'>
         MSc in Software Engineering 💻 at University in Bergen/Western Norway
         University of Applied Sciences. I take an interest in video editing📹,
         coding👩🏽‍💻, photography📸 and art🎨.

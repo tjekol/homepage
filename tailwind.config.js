@@ -22,7 +22,7 @@ module.exports = {
         ring: 'hsl(var(--ring))',
         foreground: 'hsl(var(--foreground))',
         text: {
-          DEFAULT: '#ffffff',
+          DEFAULT: '#000000',
           foreground: 'hsl(var(--text-foreground))',
           dark: '#A6A6A6',
         },
@@ -32,12 +32,12 @@ module.exports = {
           dark: '#000000',
         },
         primary: {
-          DEFAULT: '#49655B',
+          DEFAULT: '#AAB8CC',
           foreground: 'hsl(var(--primary-foreground))',
           dark: '#000000',
         },
         secondary: {
-          DEFAULT: '#ACC6BC',
+          DEFAULT: '#4B4B4B',
           foreground: 'hsl(var(--secondary-foreground))',
           dark: '#362c26',
         },

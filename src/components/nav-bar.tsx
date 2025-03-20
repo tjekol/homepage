@@ -24,10 +24,10 @@ export function NavBar() {
       <Button
         variant='link'
         className={
-          'flex-none px-1 text-base md:text-xl ' +
+          'flex-none px-1 text-base  md:text-xl ' +
           (onPage(ActivePage.Home)
-            ? 'text-text underline dark:text-text'
-            : 'text-secondary dark:text-text-dark')
+            ? ' text-text underline dark:text-text-dark'
+            : 'font-normal text-secondary dark:text-text-dark/60')
         }
         onClick={() => activePageSet(ActivePage.Home)}
         asChild
@@ -39,8 +39,8 @@ export function NavBar() {
         className={
           'flex-none px-1 text-base md:text-xl ' +
           (onPage(ActivePage.Projects)
-            ? 'text-text underline  dark:text-text'
-            : 'text-secondary dark:text-text-dark')
+            ? 'text-text underline  dark:text-text-dark'
+            : 'font-normal text-secondary dark:text-text-dark/60')
         }
         onClick={() => activePageSet(ActivePage.Projects)}
         asChild
