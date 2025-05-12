@@ -22,43 +22,44 @@ export default function ProjectPage() {
 
   return (
     <div className='flex w-full flex-col gap-10'>
-      <h1 className='text-center uppercase'>Projects🔧</h1>
-      <div className='flex flex-row justify-around'>
-        <div>
-          <div className='flex flex-col space-y-4'>
-            {projects.map((project, k) => (
-              <div key={k}>
-                <div className='flex cursor-pointer flex-col items-center gap-y-2'>
-                  <div
-                    className='flex flex-row items-center'
-                    onClick={() => {
-                      toggleProject(k);
-                    }}
-                  >
-                    {openProjects.includes(k) ? (
-                      <ChevronDownIcon className='mr-2 scale-150' />
-                    ) : (
-                      <ChevronRightIcon className='mr-2 scale-150' />
-                    )}
-                    <p className='font-medium' key={k}>
-                      {project.title}
-                    </p>
-                    <p className='ml-5'>{project.tags}</p>
-                  </div>
-                  {openProjects.includes(k) && (
-                    <>
-                      <p className='w-1/2'>{project.description}</p>
-                      <a target='_' href={project.link}>
-                        {project.link}
-                      </a>
-                    </>
-                  )}
-                  <Image className='pt-4' src={line} alt='Seperator' />
-                </div>
+      <h1 className='uppercase md:text-center'>Projects🔧</h1>
+
+      <div className='flex flex-col space-y-4'>
+        {projects.map((project, k) => (
+          <div key={k}>
+            <div className='flex cursor-pointer flex-col gap-y-2 md:items-center'>
+              <div
+                className='flex flex-row md:items-center'
+                onClick={() => {
+                  toggleProject(k);
+                }}
+              >
+                {openProjects.includes(k) ? (
+                  <ChevronDownIcon className='mr-2 scale-150' />
+                ) : (
+                  <ChevronRightIcon className='mr-2 scale-150' />
+                )}
+                <p className='font-medium' key={k}>
+                  {project.title}
+                </p>
+                <p className='ml-1 md:ml-5'>{project.tags}</p>
               </div>
-            ))}
+              {openProjects.includes(k) && (
+                <>
+                  <p className='w-4/5 md:w-1/2'>{project.description}</p>
+                  <a target='_' href={project.link}>
+                    {project.link}
+                  </a>
+                </>
+              )}
+              <Image
+                className='scale-75 pt-4 md:scale-100'
+                src={line}
+                alt='Seperator'
+              />
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

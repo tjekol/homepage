@@ -10,7 +10,7 @@ function Header() {
   const isDarkMode = theme == 'dark';
 
   return (
-    <div className='flex w-full justify-end'>
+    <div className='flex w-full md:justify-end'>
       <div className='flex gap-x-2'>
         <Button
           size='icon'
