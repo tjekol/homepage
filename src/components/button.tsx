@@ -26,9 +26,9 @@ export default function MyButton({
           {title == 'email' && (
             <EnvelopeClosedIcon className='mr-2 scale-150' />
           )}
+          <p>{tag}</p>
         </Link>
       </Button>
-      <p>{tag}</p>
     </div>
   );
 }
