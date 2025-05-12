@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 enum ActivePage {
   Home,
-  Projects,
+  Project,
 }
 
 export function NavBar() {
@@ -38,14 +38,14 @@ export function NavBar() {
         variant='link'
         className={
           'flex-none px-1 text-base md:text-xl ' +
-          (onPage(ActivePage.Projects)
+          (onPage(ActivePage.Project)
             ? 'text-text underline  dark:text-text-dark'
             : 'font-normal text-secondary dark:text-text-dark/60')
         }
-        onClick={() => activePageSet(ActivePage.Projects)}
+        onClick={() => activePageSet(ActivePage.Project)}
         asChild
       >
-        <Link href={'/projects'}>Projects</Link>
+        <Link href={'/project'}>Projects</Link>
       </Button>
     </div>
   );
