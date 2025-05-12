@@ -4,6 +4,7 @@ import line from '@/assets/verticalLine.png';
 import Image from 'next/image';
 
 export default function Home() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const main = textFile.texts.main;
   const about = textFile.texts.about;
   const description = textFile.texts.description;
