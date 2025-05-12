@@ -13,7 +13,7 @@ export default function Home() {
   const socials = textFile.social;
 
   return (
-    <div className='flex w-full flex-row items-center justify-center gap-2'>
+    <div className='flex w-full justify-center gap-2 flex-row items-center'>
       {/* left side */}
       <div className='flex w-1/3 flex-col gap-4'>
         <div>

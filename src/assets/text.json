@@ -23,26 +23,30 @@
       "tag": "thea.jenny02@gmail.com/"
     }
   ],
-  "projects": {
-    "title": [
-      {
-        "melbourne dagbok": {
-          "link": "https://melbourne.vercel.app/",
-          "description": "My travel blog from my exchange semester in Ausralia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses sanity and tailwindCSS in React."
-        }
-      },
-      {
-        "memories": {
-          "link": "https://melbourne.vercel.app/",
-          "description": "Website for uploading my pictures that I am proud of via sanity. This website is built in React and tailwindCSS."
-        }
-      },
-      {
-        "echo webkom": {
-          "link": "https://melbourne.vercel.app/",
-          "description": "Webkom is a sub-group of our student association under the Department of Informatics at University in Bergen. Webkom runs the student association's websites."
-        }
-      }
-    ]
-  }
+  "projects": [
+    {
+      "title": "Programming Language",
+      "link": "https://github.com/tjekol/DAT259-CASH",
+      "description": "Me and Vetle Knutsen created our own programing language CA$H with ANTLR. Created an interpreter and compiler in the special course DAT259 at HVL.",
+      "tags": ["University"]
+    },
+    {
+      "title": "Melbourne Dagbok🇦🇺",
+      "link": "https://melbourne.vercel.app/",
+      "description": "My travel blog from my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses sanity and tailwindCSS in React.",
+      "tags": ["Hobby"]
+    },
+    {
+      "title": "Memories🎞️",
+      "link": "https://melbourne.vercel.app/",
+      "description": "Website for uploading my pictures that I am proud of via sanity. This website is built in React and tailwindCSS.",
+      "tags": ["Hobby"]
+    },
+    {
+      "title": "echo Webkom👩🏽‍💻",
+      "link": "https://melbourne.vercel.app/",
+      "description": "Webkom is a sub-group of our student association under the Department of Informatics at University in Bergen. Webkom runs the student association's websites.",
+      "tags": ["Hobby"]
+    }
+  ]
 }
