@@ -18,10 +18,8 @@ function Header() {
           className='text-text dark:text-text-dark'
           onClick={() => setTheme(isDarkMode ? 'light' : 'dark')}
         >
-          <SunIcon className={`scale-130 ${isDarkMode ? 'block' : 'hidden'}`} />
-          <MoonIcon
-            className={`scale-130 ${isDarkMode ? 'hidden' : 'block'}`}
-          />
+          <SunIcon className={`hidden scale-[1.2] dark:block`} />
+          <MoonIcon className={`block scale-[1.2] dark:hidden`} />
         </Button>
         <NavBar />
       </div>

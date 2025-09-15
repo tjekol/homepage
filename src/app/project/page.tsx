@@ -24,12 +24,12 @@ export default function ProjectPage() {
     <div className='flex w-full flex-col gap-10'>
       <h1 className='uppercase md:text-center'>Projects🔧</h1>
 
-      <div className='flex flex-col space-y-4'>
+      <div className='flex flex-col space-y-4 w-2/3 m-auto'>
         {projects.map((project, k) => (
           <div key={k}>
-            <div className='flex cursor-pointer flex-col gap-y-2 md:items-center'>
+            <div className='flex flex-col gap-y-2 md:items-center'>
               <div
-                className='flex flex-row md:items-center'
+                className='flex cursor-pointer flex-row md:items-center'
                 onClick={() => {
                   toggleProject(k);
                 }}
@@ -47,13 +47,17 @@ export default function ProjectPage() {
               {openProjects.includes(k) && (
                 <>
                   <p className='w-4/5 md:w-1/2'>{project.description}</p>
-                  <a target='_' href={project.link}>
+                  <a
+                    target='_'
+                    href={project.link}
+                    className='cursor-pointer pt-4 font-light hover:underline'
+                  >
                     {project.link}
                   </a>
                 </>
-              )}
+              )}d
               <Image
-                className='scale-75 pt-4 md:scale-100'
+                className='scale-75 pt-4 dark:invert md:scale-100'
                 src={line}
                 alt='Seperator'
               />
