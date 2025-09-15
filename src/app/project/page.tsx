@@ -55,7 +55,7 @@ export default function ProjectPage() {
                     {project.link}
                   </a>
                 </>
-              )}d
+              )}
               <Image
                 className='scale-75 pt-4 dark:invert md:scale-100'
                 src={line}
