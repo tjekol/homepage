@@ -1,7 +1,7 @@
 {
   "texts": {
     "main": "Hi 👋🏽, my name is Thea Jenny E. Kolnes ✨",
-    "about": "I'm currently taking a MSc Software Engineering 💻 at University in Bergen and Western Norway University of Applied Sciences. I have a BSc in Computer Technology at University in Bergen",
+    "about": "I'm currently taking a MSc Software Engineering 💻 at University in Bergen and Western Norway University of Applied Sciences. I have a BSc in Computer Technology at University in Bergen.",
     "description": "I take an interest in:",
     "interests": ["editing📹", "coding👩🏽‍💻", "photography📸", "and art🎨"],
     "socialDesciption": "Connect with me🤝🏼"
@@ -9,18 +9,18 @@
   "social": [
     {
       "title": "linkedin",
-      "link": "https://www.linkedin.com/in/thea-jenny-kolnes/",
+      "link": "https://no.linkedin.com/in/thea-jenny-e-kolnes",
       "tag": "in/thea-jenny-kolnes/"
     },
     {
       "title": "github",
       "link": "https://github.com/tjekol",
-      "tag": "@tjekol"
+      "tag": "@tjekol/"
     },
     {
       "title": "email",
-      "link": "mailto:thea.jenny02@gmail.com",
-      "tag": "thea.jenny02@gmail.com/"
+      "link": "mailto:tjekolnes@gmail.com",
+      "tag": "tjekolnes@gmail.com/"
     }
   ],
   "projects": [
@@ -31,15 +31,15 @@
       "tags": ["University"]
     },
     {
-      "title": "Melbourne Dagbok🇦🇺",
+      "title": "TJs Reisedagbok✈️",
       "link": "https://melbourne.vercel.app/",
-      "description": "My travel blog from my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses sanity and tailwindCSS in React.",
+      "description": "My travel blog that I originally developed for my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses Sanity and tailwindCSS in React.",
       "tags": ["Hobby"]
     },
     {
       "title": "Memories🎞️",
       "link": "https://memoriies.vercel.app/",
-      "description": "Website for uploading my pictures that I am proud of via sanity. This website is built in React and tailwindCSS.",
+      "description": "Website for uploading my pictures that I am proud of via Sanity. This website is built in React and tailwindCSS.",
       "tags": ["Hobby"]
     },
     {

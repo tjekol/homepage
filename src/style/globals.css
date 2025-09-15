@@ -14,23 +14,23 @@
   h1 {
     @apply text-lg md:text-3xl;
     @apply font-semibold;
-    @apply text-text dark:text-text-dark;
+    @apply text-text dark:text-white/80;
   }
 
   h2 {
     @apply text-base md:text-2xl;
     @apply font-bold;
-    @apply text-text dark:text-text-dark;
+    @apply text-text dark:text-white/80;
   }
 
   h3 {
     @apply text-base md:text-xl;
     @apply font-bold;
-    @apply text-text dark:text-text-dark;
+    @apply text-text dark:text-white/80;
   }
 
   p {
     @apply text-sm md:text-base;
-    @apply text-text dark:text-text-dark;
+    @apply text-text dark:text-white/80;
   }
 }

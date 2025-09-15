@@ -17,7 +17,12 @@ export default function MyButton({
 }) {
   return (
     <div className='flex flex-row items-center'>
-      <Button variant='link' size='sm' className='text-base text-text' asChild>
+      <Button
+        variant='link'
+        size='sm'
+        className='text-base font-light text-text dark:brightness-0 dark:invert dark:saturate-0'
+        asChild
+      >
         <Link href={link} target='_blank'>
           {title == 'linkedin' && (
             <LinkedInLogoIcon className='mr-2 scale-150' />

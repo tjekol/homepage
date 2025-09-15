@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { Button } from './ui/button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 enum ActivePage {
   Home,
@@ -10,14 +11,18 @@ enum ActivePage {
 }
 
 export function NavBar() {
+  const pathname = usePathname();
   const [activePage, setActivePage] = useState(ActivePage.Home);
-  function activePageSet(page: ActivePage) {
-    setActivePage(page);
-  }
 
-  function onPage(page: ActivePage) {
-    return activePage === page;
-  }
+  const findActivePage = () => {
+    pathname == '/project'
+      ? setActivePage(ActivePage.Project)
+      : setActivePage(ActivePage.Home);
+  };
+
+  useEffect(() => {
+    findActivePage();
+  });
 
   return (
     <div className='flex flex-row gap-x-2'>
@@ -25,11 +30,11 @@ export function NavBar() {
         variant='link'
         className={
           'flex-none px-1 text-base  md:text-xl ' +
-          (onPage(ActivePage.Home)
+          (activePage === ActivePage.Home
             ? ' text-text underline dark:text-text-dark'
             : 'font-normal text-secondary dark:text-text-dark/60')
         }
-        onClick={() => activePageSet(ActivePage.Home)}
+        onClick={() => setActivePage(ActivePage.Home)}
         asChild
       >
         <Link href={'/'}>Home</Link>
@@ -38,11 +43,11 @@ export function NavBar() {
         variant='link'
         className={
           'flex-none px-1 text-base md:text-xl ' +
-          (onPage(ActivePage.Project)
+          (activePage === ActivePage.Project
             ? 'text-text underline  dark:text-text-dark'
             : 'font-normal text-secondary dark:text-text-dark/60')
         }
-        onClick={() => activePageSet(ActivePage.Project)}
+        onClick={() => setActivePage(ActivePage.Project)}
         asChild
       >
         <Link href={'/project'}>Projects</Link>

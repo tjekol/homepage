@@ -14,7 +14,7 @@ export default function Home() {
   const socials = textFile.social;
 
   return (
-    <div className='flex w-full flex-col justify-center gap-2 md:flex-row md:items-center'>
+    <div className='flex w-full flex-col justify-center gap-6 md:flex-row md:items-center'>
       {/* left side */}
       <div className='flex flex-col gap-4 md:w-1/3'>
         <div>
@@ -30,10 +30,14 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Image src={line} alt='Divider' className='hidden md:inline' />
+      <Image
+        src={line}
+        alt='Divider'
+        className='hidden dark:invert md:inline'
+      />
       {/* right side */}
-      <div className='flex flex-col pt-4 md:p-10'>
-        <p className='font-medium'>{socialDesc}</p>
+      <div className='flex flex-col gap-2 pt-4 md:p-10'>
+        <p className='pb-4 font-medium'>{socialDesc}</p>
         {socials.map((social, k) => (
           <MyButton
             key={k}
