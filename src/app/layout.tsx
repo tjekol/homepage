@@ -29,7 +29,7 @@ export default function RootLayout({
               href='https://github.com/tjekol'
               className='font-light hover:underline'
             >
-              Made by Thea Jenny Kolnes🦋
+              Made by TJEKOL🦋
             </a>
           </main>
         </ThemeProvider>
