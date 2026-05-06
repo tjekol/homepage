@@ -32,7 +32,7 @@
     },
     {
       "title": "TJs Reisedagbok✈️",
-      "link": "https://melbourne.vercel.app/",
+      "link": "https://tjs-reisedagbok.vercel.app/",
       "description": "My travel blog that I originally developed for my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses Sanity and tailwindCSS in React.",
       "tags": ["Hobby"]
     },
