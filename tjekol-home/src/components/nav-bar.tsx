@@ -1,8 +1,9 @@
 'use client';
 
-import { Button, useTheme } from '@heroui/react';
+import { Button } from '@heroui/react';
 import { usePathname } from 'next/navigation';
 import { Moon, Sun } from '@gravity-ui/icons';
+import { useTheme } from 'next-themes';
 
 export default function NavigationBar() {
   const pathname = usePathname();
