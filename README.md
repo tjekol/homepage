@@ -2,7 +2,7 @@
 
 My name is Thea Jenny 👋🏽
 
-Visit my website [here](https://www.tjekol.no/) ✨
+Visit my website [here](https://tjekol.vercel.app) ✨
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
