@@ -1,7 +1,7 @@
 {
   "texts": {
     "main": "Hi 👋🏽, my name is Thea Jenny E. Kolnes ✨",
-    "about": "I'm currently taking a MSc Software Engineering 💻 at University in Bergen and Western Norway University of Applied Sciences. I have a BSc in Computer Technology at University in Bergen.",
+    "about": "I have a MSc Software Engineering 💻 at University in Bergen and Western Norway University of Applied Sciences and a BSc in Computer Technology at University in Bergen.",
     "description": "I take an interest in:",
     "interests": ["editing📹", "coding👩🏽‍💻", "photography📸", "and art🎨"],
     "socialDesciption": "Connect with me🤝🏼"
@@ -25,12 +25,6 @@
   ],
   "projects": [
     {
-      "title": "Programming Language",
-      "link": "https://github.com/tjekol/DAT259-CASH",
-      "description": "Me and Vetle Knutsen created our own programing language CA$H with ANTLR. Created an interpreter and compiler in the special course DAT259 at HVL.",
-      "tags": ["University"]
-    },
-    {
       "title": "TJs Reisedagbok✈️",
       "link": "https://tjs-reisedagbok.vercel.app/",
       "description": "My travel blog that I originally developed for my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses Sanity and tailwindCSS in React.",
@@ -41,6 +35,12 @@
       "link": "https://memoriies.vercel.app/",
       "description": "Website for uploading my pictures that I am proud of via Sanity. This website is built in React and tailwindCSS.",
       "tags": ["Hobby"]
+    },
+    {
+      "title": "Programming Language",
+      "link": "https://github.com/tjekol/DAT259-CASH",
+      "description": "Me and Vetle Knutsen created our own programing language CA$H with ANTLR. Created an interpreter and compiler in the special course DAT259 at HVL.",
+      "tags": ["University"]
     },
     {
       "title": "echo Webkom👩🏽‍💻",
