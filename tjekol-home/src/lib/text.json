@@ -27,13 +27,13 @@
     {
       "title": "TJs Reisedagbok✈️",
       "link": "https://tjs-reisedagbok.vercel.app/",
-      "description": "My travel blog that I originally developed for my exchange semester in Australia, Melbourne. During my travels I uploaded posts and pictures of my life down under. This website uses Sanity and tailwindCSS in React.",
+      "description": "My travel blog that I originally developed for my exchange semester in Australia, Melbourne. I upload posts and pictures from my travels and users can sign in to like posts. This website uses Google Firebase, Sanity and tailwindCSS in React.",
       "tags": ["Hobby"]
     },
     {
-      "title": "Memories🎞️",
-      "link": "https://memoriies.vercel.app/",
-      "description": "Website for uploading my pictures that I am proud of via Sanity. This website is built in React and tailwindCSS.",
+      "title": "Photo Wall🎞️",
+      "link": "https://photo-w4ll.vercel.app",
+      "description": "Photo Wall, a website where anyone can upload photos to share. This website is built in React, tailwindCSS and Sanity for CMS.",
       "tags": ["Hobby"]
     },
     {
