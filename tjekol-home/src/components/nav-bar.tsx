@@ -10,7 +10,7 @@ export default function NavigationBar() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className='flex gap-2 absolute right-10'>
+    <div className='flex gap-2 self-end'>
       <Button
         variant='ghost'
         onPress={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -18,14 +18,10 @@ export default function NavigationBar() {
         {theme === 'dark' ? <Sun /> : <Moon />}
       </Button>
       <Button variant={pathname === '/' ? 'tertiary' : 'outline'}>
-        <a href='/'>
-          <h2>Home</h2>
-        </a>
+        <a href='/'>Home</a>
       </Button>
       <Button variant={pathname === '/projects' ? 'tertiary' : 'outline'}>
-        <a href='projects'>
-          <h2>Projects</h2>
-        </a>
+        <a href='projects'>Projects</a>
       </Button>
     </div>
   );
