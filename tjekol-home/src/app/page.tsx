@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className='bg-background flex min-h-screen flex-col items-center justify-between gap-4 p-10 font-sans md:p-10'>
       <NavigationBar />
-      <main className='flex w-full flex-col items-center justify-center gap-8 md:flex-row'>
+      <main className='flex w-full flex-col justify-center gap-8 md:flex-row md:items-center'>
         <div className='flex w-full flex-col gap-2 md:w-1/3'>
           <h1 className='whitespace-pre-line'>{main}</h1>
           <ul className='list-inside list-disc text-wrap'>
