@@ -6,17 +6,17 @@ export default function ProjectsPage() {
   const projects = file.projects;
 
   return (
-    <div className='flex flex-col flex-1 items-center bg-background font-sans p-10'>
+    <div className='bg-background flex flex-1 flex-col items-center p-10 font-sans'>
       <NavigationBar />
-      <main className='flex flex-col gap-4 m-auto justify-center w-full md:w-1/2'>
+      <main className='m-auto flex w-full flex-col justify-center gap-4 md:w-1/2'>
         <h1>Projects🔧</h1>
-        <Accordion allowsMultipleExpanded className='w-full'>
+        <Accordion className='w-full'>
           {projects.map((project, k) => (
             <Accordion.Item key={k}>
               <Accordion.Heading>
                 <Accordion.Trigger>
                   {project.title}{' '}
-                  <div className='font-light ml-2'>/{project.tags}</div>
+                  <div className='ml-2 font-light'>/{project.tags}</div>
                   <Accordion.Indicator />
                 </Accordion.Trigger>
               </Accordion.Heading>

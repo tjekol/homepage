@@ -117,11 +117,15 @@
 
 @layer components {
   .accordion__trigger {
-    @apply font-semibold text-lg;
+    @apply text-lg font-semibold;
   }
 
   .accordion__body-inner {
     @apply text-base;
+  }
+
+  .button {
+    @apply font-semibold;
   }
 }
 
@@ -139,11 +143,11 @@ body {
 }
 
 h1 {
-  font-size: x-large;
   font-weight: 600;
+  font-size: larger;
 }
 
 h2 {
-  font-size: larger;
-  font-weight: 600;
+  font-size: large;
+  font-weight: 500;
 }
